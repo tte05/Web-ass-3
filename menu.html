@@ -1,0 +1,80 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Restaurant</title>
+        <link rel="stylesheet" href="menu.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+
+
+    <div class="container">
+        <div>
+        
+            <body>
+                <div class="time">
+                    <div>
+                        <p id="Days">00</p>
+                        <span>Days</span>
+                    </div>
+                    <div>
+                        <p id="Hours">00</p>
+                        <span>Hours</span>
+                    </div>
+                    <div>
+                        <p id="Minutes">00</p>
+                        <span>Minutes</span>
+                    </div>
+                    <div>
+                        <p id="Seconds">00</p>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+        </div>
+    
+
+
+
+        <div class="todo-app">
+            <h2>ToDo-List <img src="images/icon.png" alt="icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+             <!-- <li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li> -->
+            </ul>
+        </div>
+    <div class="change-content-container">
+        <label for="myInput">Change content:</label>
+        <input type="text" id="myInput" class="change-content-input" placeholder="Enter new content here...">
+    </div>
+    
+    <button id="changebtn" onclick="changeContent()">Change Content</button>
+    
+    <div id="content">
+        <p>This is the initial content.</p>
+    </div>
+
+    <div class="rating">
+        <input type="radio" name="rading" id="star5" value="5">
+        <label for="star5"></label>
+        <input type="radio" name="rading" id="star4" value="4">
+        <label for="star4"></label>
+        <input type="radio" name="rading" id="star3" value="3">
+        <label for="star3"></label>
+        <input type="radio" name="rading" id="star2" value="2">
+        <label for="star2"></label>
+        <input type="radio" name="rading" id="star1" value="1">
+        <label for="star1"></label>
+    </div>
+    <div class="score">No Rating</div>
+    </div>
+     <script src="menu.js"></script>       
+    </body>
+
+    </html>
